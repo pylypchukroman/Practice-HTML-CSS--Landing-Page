@@ -1,0 +1,20 @@
+.page-footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.footer-common {
+  display: flex;
+  align-items: baseline;
+}
+.join {
+  margin-left: 70px;
+}
+.join__txt {
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primary-white);
+}
