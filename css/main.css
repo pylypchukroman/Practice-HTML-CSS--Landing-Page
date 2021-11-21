@@ -340,7 +340,8 @@ img {
   .section-title {
     margin-bottom: 50px;
     font-size: 36px;
-    font-weight: 1.17;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
   }
 }
 
@@ -354,13 +355,6 @@ img {
   .benefits__pasteboard-list {
     display: flex;
     flex-wrap: wrap;
-    margin-right: -30px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .benefits__pasteboard-list {
-    margin-right: -30px;
   }
 }
 
@@ -386,7 +380,7 @@ img {
 
 @media screen and (min-width: 768px) {
   .pasteboard-list__description {
-    width: calc(100% / 2 - 30px);
+    width: calc(100% / 2 - 15px);
     margin-left: 30px;
   }
   .pasteboard-list__description:nth-child(2n + 1) {
@@ -399,7 +393,7 @@ img {
 
 @media screen and (min-width: 1200px) {
   .pasteboard-list__description {
-    width: calc(100% / 4 - 30px);
+    width: calc(100% / 4 - 23px);
     margin-bottom: 0;
   }
   .pasteboard-list__description:nth-child(3) {
@@ -520,7 +514,6 @@ img {
   .team__team-list {
     display: flex;
     flex-wrap: wrap;
-    margin-right: -30px;
   }
 }
 
@@ -554,7 +547,7 @@ img {
 
 @media screen and (min-width: 768px) {
   .team-list__member {
-    width: calc(100% / 2 - 30px);
+    width: calc(100% / 2 - 15px);
     margin-right: 30px;
   }
   .team-list__member:nth-child(2n + 2) {
@@ -567,7 +560,7 @@ img {
 
 @media screen and (min-width: 1200px) {
   .team-list__member {
-    width: calc(100% / 4 - 30px);
+    width: calc(100% / 4 - 23px);
     margin-bottom: 0;
   }
   .team-list__member:nth-child(3) {
@@ -679,7 +672,6 @@ img {
   display: flex;
   flex-wrap: wrap;
   padding-left: 0;
-  justify-content: center;
   margin-top: 0;
   margin-bottom: 0;
   margin-top: 0;
@@ -688,7 +680,7 @@ img {
 .clients__card {
   margin-right: 30px;
   margin-bottom: 30px;
-  width: calc(100% / 2 - 30px);
+  width: calc(100% / 2 - 15px);
 }
 
 .clients__card:nth-child(2n + 2) {
@@ -701,7 +693,7 @@ img {
 
 @media screen and (min-width: 768px) {
   .clients__card {
-    width: calc(100% / 3 - 30px);
+    width: calc(100% / 3 - 20px);
   }
   .clients__card:nth-child(2) {
     margin-right: 30px;
