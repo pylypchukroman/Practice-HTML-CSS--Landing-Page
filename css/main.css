@@ -99,6 +99,22 @@ img {
   align-items: center;
 }
 
+@media screen and (min-width: 768px) {
+  .main-nav {
+    margin-right: 84px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .main-nav {
+    margin-right: 305px;
+  }
+}
+
+.header-navigation {
+  display: flex;
+}
+
 .logo {
   margin-top: 24px;
   margin-bottom: 25px;
@@ -109,6 +125,12 @@ img {
   line-height: 1.17;
   text-decoration: none;
   text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .logo {
+    margin-right: 88px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -138,15 +160,22 @@ img {
   margin-right: 50px;
 }
 
-.site-nav .linklast-child {
+.site-nav .link:last-child {
   margin-right: 0;
 }
 
 .site-nav {
+  display: none;
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
-  display: flex;
+}
+
+@media screen and (min-width: 768px) {
+  .site-nav {
+    width: 294px;
+    display: flex;
+  }
 }
 
 .site-nav-link {
@@ -189,16 +218,33 @@ img {
 }
 
 .cont-nav {
+  display: none;
   margin-top: 0;
   margin-bottom: 0;
   margin-left: auto;
   padding-left: 0;
-  display: flex;
+}
+
+@media screen and (min-width: 768px) {
+  .cont-nav {
+    display: block;
+    margin-left: 0;
+    padding-top: 21px;
+    padding-bottom: 21px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .cont-nav {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .cont-nav-link {
   color: var(--primary-text-color);
   font-weight: 500;
+  font-size: 12px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
@@ -211,12 +257,31 @@ img {
   color: var(--accent-color);
 }
 
-.cont-nav .link {
-  margin-right: 50px;
+@media screen and (min-width: 1200px) {
+  .cont-nav-link {
+    font-size: 14px;
+  }
 }
 
-.cont-nav .link:last-child {
-  margin-right: 0;
+@media screen and (min-width: 768px) {
+  .cont-nav .link {
+    margin-right: 0;
+  }
+  .cont-nav .link:first-child {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .cont-nav .link {
+    margin-right: 30px;
+  }
+  .cont-nav .link:first-child {
+    margin-bottom: 0;
+  }
+  .cont-nav .link:last-child {
+    margin-right: 0;
+  }
 }
 
 .footer-contacts-icon {

@@ -4,4 +4,13 @@
 .main-nav {
   display: flex;
   align-items: center;
+  @media screen and (min-width: 768px) {
+    margin-right: 84px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 305px;
+  }
+}
+.header-navigation {
+  display: flex;
 }
