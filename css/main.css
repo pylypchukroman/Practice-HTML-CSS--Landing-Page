@@ -744,16 +744,37 @@ img {
 }
 
 .projects {
-  padding-bottom: 94px;
-  padding-top: 82px;
+  padding-bottom: 60px;
+  padding-top: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .projects {
+    padding-bottom: 94px;
+    padding-top: 94px;
+  }
 }
 
 .filter {
   margin-top: 0;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   padding-left: 0;
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: start;
+}
+
+@media screen and (min-width: 768px) {
+  .filter {
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .filter {
+    margin-bottom: 50px;
+  }
 }
 
 .filter-btn {
@@ -762,6 +783,23 @@ img {
 
 .filter-btn:last-child {
   margin-right: 0;
+}
+
+.filter-btn:nth-child(3) {
+  margin-right: 0;
+}
+
+.filter-btn:nth-child(-n + 3) {
+  margin-bottom: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .filter-btn:nth-child(-n + 3) {
+    margin-bottom: 0;
+  }
+  .filter-btn:nth-child(3) {
+    margin-right: 8px;
+  }
 }
 
 .projects-filter {
@@ -815,17 +853,23 @@ img {
 }
 
 .projects-list {
-  display: flex;
-  flex-wrap: wrap;
   padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .projects-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .projects-block {
   position: relative;
   overflow: hidden;
-  margin-right: 30px;
   margin-bottom: 30px;
-  width: 370px;
+  width: 100%;
   height: 404px;
   border: 1px solid #eeeeee;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -840,17 +884,43 @@ img {
 }
 
 .projects-block:nth-child(n + 7) {
-  margin-bottom: 0;
+  margin-bottom: 30px;
 }
 
 .projects-block:nth-child(3n + 3) {
   margin-right: 0;
 }
 
+@media screen and (min-width: 768px) {
+  .projects-block {
+    width: calc(100% / 2 - 30px);
+    height: 414px;
+  }
+  .projects-block:nth-last-child(odd) {
+    margin-right: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .projects-block {
+    width: calc(100% / 3 - 30px);
+    height: 440px;
+  }
+  .projects-block:nth-child(2n) {
+    margin-right: 30px;
+  }
+  .projects-block:nth-child(3n + 3) {
+    margin-right: 0;
+  }
+  .projects-block:nth-child(n + 6) {
+    margin-bottom: 0;
+  }
+}
+
 .projects-block-thumb {
   position: relative;
   overflow: hidden;
-  width: 370px;
+  width: 100%;
   height: 294px;
 }
 
@@ -862,7 +932,7 @@ img {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   content: "";
   display: inline-block;
-  width: 370px;
+  width: 100%;
   height: 294px;
   background: rgba(33, 150, 243, 0.9);
 }
