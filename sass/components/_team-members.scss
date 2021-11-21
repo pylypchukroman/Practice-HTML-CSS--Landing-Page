@@ -11,8 +11,11 @@
 }
 .team-list__description {
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 24px;
   text-align: center;
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 30px;
+  }
 }
 .team-list__member {
   // height: 428px;
