@@ -52,14 +52,14 @@
   //   margin-bottom: 0;
   // }
   @media screen and (min-width: 768px) {
-    width: calc(100% / 2 - 30px);
+    width: calc(100% / 2 - 15px);
     height: 414px;
     &:nth-last-child(odd) {
       margin-right: 30px;
     }
   }
   @media screen and (min-width: 1200px) {
-    width: calc(100% / 3 - 30px);
+    width: calc(100% / 3 - 20px);
     height: 440px;
     &:nth-child(2n) {
       margin-right: 30px;

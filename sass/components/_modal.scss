@@ -4,12 +4,16 @@
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 40px 40px;
-  width: 528px;
-  height: 581px;
+  width: 450px;
+  height: 609px;
   background-color: var(--primary-white);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+  @media screen and (min-width: 1200px) {
+    width: 528px;
+    height: 581px;
+  }
 }
 .modal-button-close {
   position: absolute;
@@ -39,11 +43,14 @@
 .modal-title {
   font-weight: 600;
   font-size: 20px;
-  line-height: calc(23 / 20);
+  line-height: calc(30 / 20);
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 12px;
   color: var(--title-text-color);
+  @media screen and (min-width: 1200px) {
+    line-height: calc(23 / 20);
+  }
 }
 .form-field {
   width: 448px;
@@ -62,12 +69,15 @@
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   height: 40px;
-  width: 100%;
+  width: 370px;
   padding: 0 0;
   outline: none;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:focus {
     border: 1px solid var(--accent-color);
+  }
+  @media screen and (min-width: 1200px) {
+    width: 100%;
   }
 }
 .modal-inpute {
@@ -81,6 +91,7 @@
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   height: 120px;
+  width: 370px;
   padding: 12px 16px;
   resize: none;
   outline: none;
@@ -95,6 +106,9 @@
   &:focus {
     border: 1px solid var(--accent-color);
   }
+  @media screen and (min-width: 1200px) {
+    width: 100%;
+  }
 }
 .form-field-name {
   margin-bottom: 4px;
@@ -106,13 +120,17 @@
 }
 .check-text {
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
   display: flex;
   justify-content: center;
   align-items: center;
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 .custom-icon {
   display: flex;
@@ -156,11 +174,15 @@
 }
 .checkbox-fild-contract {
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   text-decoration-line: underline;
   color: var(--accent-color);
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 .inpute-icon-check {
   fill: var(--primary-white);

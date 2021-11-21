@@ -115,6 +115,7 @@ img {
   .logo {
     font-size: 26px;
     line-height: 1.19;
+    margin-right: 93px;
   }
 }
 
@@ -893,7 +894,7 @@ img {
 
 @media screen and (min-width: 768px) {
   .projects-block {
-    width: calc(100% / 2 - 30px);
+    width: calc(100% / 2 - 15px);
     height: 414px;
   }
   .projects-block:nth-last-child(odd) {
@@ -903,7 +904,7 @@ img {
 
 @media screen and (min-width: 1200px) {
   .projects-block {
-    width: calc(100% / 3 - 30px);
+    width: calc(100% / 3 - 20px);
     height: 440px;
   }
   .projects-block:nth-child(2n) {
@@ -1260,11 +1261,18 @@ img {
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 40px 40px;
-  width: 528px;
-  height: 581px;
+  width: 450px;
+  height: 609px;
   background-color: var(--primary-white);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
 }
 
 .modal-button-close {
@@ -1295,11 +1303,17 @@ img {
 .modal-title {
   font-weight: 600;
   font-size: 20px;
-  line-height: calc(23 / 20);
+  line-height: calc(30 / 20);
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 12px;
   color: var(--title-text-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-title {
+    line-height: calc(23 / 20);
+  }
 }
 
 .form-field {
@@ -1322,7 +1336,7 @@ img {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   height: 40px;
-  width: 100%;
+  width: 370px;
   padding: 0 0;
   outline: none;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1330,6 +1344,12 @@ img {
 
 .modal-inpute:focus {
   border: 1px solid var(--accent-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-inpute {
+    width: 100%;
+  }
 }
 
 .modal-inpute:focus + .modal-inpute-icon {
@@ -1340,6 +1360,7 @@ img {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   height: 120px;
+  width: 370px;
   padding: 12px 16px;
   resize: none;
   outline: none;
@@ -1358,6 +1379,12 @@ img {
   border: 1px solid var(--accent-color);
 }
 
+@media screen and (min-width: 1200px) {
+  .comment-inpute {
+    width: 100%;
+  }
+}
+
 .form-field-name {
   margin-bottom: 4px;
   font-weight: 400;
@@ -1369,13 +1396,20 @@ img {
 
 .check-text {
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .check-text {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .custom-icon {
@@ -1424,11 +1458,18 @@ img {
 
 .checkbox-fild-contract {
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   text-decoration-line: underline;
   color: var(--accent-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .checkbox-fild-contract {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .inpute-icon-check {
