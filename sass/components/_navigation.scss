@@ -18,6 +18,10 @@
   @media screen and (min-width: 768px) {
     width: 294px;
     display: flex;
+    margin-left: 88px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-left: 0;
   }
 }
 .site-nav-link {

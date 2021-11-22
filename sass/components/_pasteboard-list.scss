@@ -69,6 +69,9 @@
   line-height: 1.14;
   text-transform: uppercase;
   text-align: center;
+  @media screen and (min-width: 768px) {
+    text-align: start;
+  }
 }
 .pasteboard-list__text {
   line-height: 1.71;
