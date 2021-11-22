@@ -56,8 +56,8 @@
       url(../images/hero/bg-hero-foto-mob-2x.jpg);
   }
   @media screen and (min-width: 768px) {
-    padding-top: 280px;
-    padding-bottom: 206px;
+    padding-top: 118px;
+    padding-bottom: 118px;
     // padding-left: 70px;
     background-image: linear-gradient(
         to right,
@@ -77,7 +77,8 @@
     }
   }
   @media screen and (min-width: 1200px) {
-    // padding-left: 96px;
+    padding-top: 200px;
+    padding-bottom: 200px;
     background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.4),
