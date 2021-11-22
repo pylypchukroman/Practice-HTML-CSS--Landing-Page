@@ -41,7 +41,7 @@
   }
 }
 .site-nav-link {
-  .current {
+  &.current {
     color: var(--accent-color);
   }
 }
