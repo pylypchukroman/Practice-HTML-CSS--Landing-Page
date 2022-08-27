@@ -1,2 +1,3 @@
-# goit-markup-hw-02
-Репозиторій для домашньої роботи 2
+# HTML/CSS practice
+
+Fully responsive landing page to improve my HTML and CSS knowledge
